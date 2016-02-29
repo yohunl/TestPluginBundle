@@ -24,5 +24,9 @@
 	<string>Copyright © 2016年 yohunl. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
+	<key>XC4Compatible</key>
+	<true/>
+	<key>XCPluginHasUI</key>
+	<false/>
 </dict>
 </plist>
