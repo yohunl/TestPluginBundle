@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (Extension)
-+ (void)pluginDidLoad:(NSBundle *)plugin;
+//+ (void)pluginDidLoad:(NSBundle *)plugin;
 @end

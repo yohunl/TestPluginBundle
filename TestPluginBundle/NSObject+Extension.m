@@ -9,15 +9,15 @@
 #import "NSObject+Extension.h"
 #import "TestPluginBundle.h"
 @implementation NSObject (Extension)
-+ (void)pluginDidLoad:(NSBundle *)plugin
-{
-    NSLog(@"插件运行了!,%@",plugin);
-    static dispatch_once_t onceToken;
-    NSString *currentApplicationName = [[NSBundle mainBundle] infoDictionary][@"CFBundleName"];
-    if ([currentApplicationName isEqual:@"Xcode"]) {
-        dispatch_once(&onceToken, ^{
-            [TestPluginBundle sharedInstance];
-        });
-    }
-}
+//+ (void)pluginDidLoad:(NSBundle *)plugin
+//{
+//    NSLog(@"插件运行了!,%@",plugin);
+//    static dispatch_once_t onceToken;
+//    NSString *currentApplicationName = [[NSBundle mainBundle] infoDictionary][@"CFBundleName"];
+//    if ([currentApplicationName isEqual:@"Xcode"]) {
+//        dispatch_once(&onceToken, ^{
+//            [TestPluginBundle sharedInstance];
+//        });
+//    }
+//}
 @end

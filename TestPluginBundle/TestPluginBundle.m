@@ -9,10 +9,10 @@
 #import "TestPluginBundle.h"
 
 @implementation TestPluginBundle
-//+(void)pluginDidLoad:(NSBundle *)plugin {
-//    NSLog(@"插件运行了!");
-//    [TestPluginBundle sharedInstance];
-//}
++(void)pluginDidLoad:(NSBundle *)plugin {
+    NSLog(@"插件运行了!");
+    [TestPluginBundle sharedInstance];
+}
 
 - (instancetype)init{
     self = [super init];
@@ -27,22 +27,17 @@
 
 - (void)didApplicationFinishLaunchingNotification:(NSNotification*)noti
 {
-    //removeObserver
     [[NSNotificationCenter defaultCenter] removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
     
-    // Create menu items, initialize UI, etc.
-    // Sample Menu Item:
     NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
     if (menuItem) {
         [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
         NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"测试菜单" action:@selector(doMenuAction) keyEquivalent:@""];
-        //[actionMenuItem setKeyEquivalentModifierMask:NSAlphaShiftKeyMask | NSControlKeyMask];
         [actionMenuItem setTarget:self];
         [[menuItem submenu] addItem:actionMenuItem];
     }
 }
 
-// Sample Action, for menu item:
 - (void)doMenuAction
 {
     NSAlert *alert = [[NSAlert alloc] init];
