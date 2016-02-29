@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		093450A41C83DFF800421CC0 /* TestPluginBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 093450A31C83DFF800421CC0 /* TestPluginBundle.m */; };
+		09AAE08F1C83E2B9007E2F1D /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AAE08E1C83E2B9007E2F1D /* NSObject+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -15,6 +16,8 @@
 		0934509C1C83DE5100421CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		093450A21C83DFF800421CC0 /* TestPluginBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPluginBundle.h; sourceTree = "<group>"; };
 		093450A31C83DFF800421CC0 /* TestPluginBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPluginBundle.m; sourceTree = "<group>"; };
+		09AAE08D1C83E2B9007E2F1D /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		09AAE08E1C83E2B9007E2F1D /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +53,8 @@
 				0934509C1C83DE5100421CC0 /* Info.plist */,
 				093450A21C83DFF800421CC0 /* TestPluginBundle.h */,
 				093450A31C83DFF800421CC0 /* TestPluginBundle.m */,
+				09AAE08D1C83E2B9007E2F1D /* NSObject+Extension.h */,
+				09AAE08E1C83E2B9007E2F1D /* NSObject+Extension.m */,
 			);
 			path = TestPluginBundle;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				093450A41C83DFF800421CC0 /* TestPluginBundle.m in Sources */,
+				09AAE08F1C83E2B9007E2F1D /* NSObject+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +261,7 @@
 				093450A11C83DE5100421CC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

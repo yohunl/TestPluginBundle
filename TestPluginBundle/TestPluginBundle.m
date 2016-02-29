@@ -9,10 +9,10 @@
 #import "TestPluginBundle.h"
 
 @implementation TestPluginBundle
-+(void)pluginDidLoad:(NSBundle *)plugin {
-    NSLog(@"插件运行了!");
-    [TestPluginBundle sharedInstance];
-}
+//+(void)pluginDidLoad:(NSBundle *)plugin {
+//    NSLog(@"插件运行了!");
+//    [TestPluginBundle sharedInstance];
+//}
 
 - (instancetype)init{
     self = [super init];

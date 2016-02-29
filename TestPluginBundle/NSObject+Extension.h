@@ -1,5 +1,5 @@
 //
-//  TestPluginBundle.h
+//  NSObject+Extension.h
 //  TestPluginBundle
 //
 //  Created by lingyohunl on 16/2/29.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TestPluginBundle : NSObject
-+ (instancetype)sharedInstance;
+@interface NSObject (Extension)
++ (void)pluginDidLoad:(NSBundle *)plugin;
 @end
